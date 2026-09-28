@@ -1,0 +1,7 @@
+[package]
+name = "audio-print"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+rodio = { version = "0.22.1", default-features = false, features = ["symphonia-all", "playback"] }
