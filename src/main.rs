@@ -1,6 +1,8 @@
 
 mod player;
-
-fn main() {
-    player::play_audio().expect("Audio playback failed");
+mod terminal;
+fn main() -> color_eyre::Result<()> {
+    color_eyre::install()?;
+    ratatui::run(terminal::app::app)?;
+    Ok(())
 }
