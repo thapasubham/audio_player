@@ -7,6 +7,8 @@ edition = "2024"
 color-eyre = "0.6.5"
 
 crossterm = "0.29.0"
+image = "0.25.10"
 lofty = "0.25.4"
 ratatui = "0.30.2"
+ratatui-image = { version = "11.1.0", default-features = false, features = ["crossterm"] }
 rodio = { version = "0.22.1", default-features = false, features = ["symphonia-all", "playback"] }
